@@ -1,0 +1,48 @@
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+class Recepta {
+public:
+    string numerRecepty;
+    string imie;
+    string nazwisko;
+    string numerUbezpieczenia;
+    vector<string> leki;
+    bool zatwierdzona;
+};
+
+class Stomatolog {
+public:
+    Recepta wystawRecepte() {
+        Recepta recepta;
+        recepta.zatwierdzona = false;
+
+        cout << "Podaj imie pacjenta: ";
+        cin >> recepta.imie;
+        cout << "Podaj nazwisko pacjenta: ";
+        cin >> recepta.nazwisko;
+        cout << "Podaj numer ubezpieczenia zdrowotnego pacjenta: ";
+        cin >> recepta.numerUbezpieczenia;
+
+        while (true) {
+            cout << "Dodaj leki do recepty (wpisz 'koniec' aby zakonczyc):" << endl;
+            string lek;
+            cout << "Lek: ";
+            cin >> lek;
+            if (lek == "koniec") {
+                break;
+            }
+            recepta.leki.push_back(lek);
+        }
+
+
+        return recepta;
+    }
+
+};
+
