@@ -1,0 +1,3 @@
+Wzorzec Singleton - Wzorzec ten może być użyteczny dla klasy SystemRecept, ponieważ zapewnia że istnieje tylko jedna instancja tej klasy w całym systemie. Singleton zapewniałby globalny dostęp do listy dostępnych leków i innych zasobów systemowych.
+Wzorzec Builder - Jak już zastosowałem w swoim kodzie, ten wzorzec jest bardzo pomocny w budowaniu złożonych obiektów krok po kroku. Wzorzec ten doskonale pasuje do procesu tworzenia obiektów Recepta, gdzie wiele atrybutów jest ustawianych w różnych krokach.
+Wzorzec Fasada - Jeśli moja aplikacja byłaby interaktywna z różnymi systemami zewnętrznymi lub złożonymi bibliotekami. Fasada zapewniłaby uproszczony interfejs do tych zewnętrznych systemów, ukrywając przed użytkownikiem ich złożoność.
